@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Image Website</title>
+    <style>
+        body {
+            text-align: center;
+            padding: 50px;
+          background: linear-gradient(45deg, #3498db, #e74c3c); /* */
+     
+        }
+  @keyframes moveText {
+            0% {
+                transform: translateX(0);
+            }
+            50% {
+                transform: translateX(100px);
+            }
+            100% {
+                transform: translateX(0);
+            }
+        }
+  h1{
+    color: white; /* */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+    font-size: 24px;
+            animation: moveText 0s infinite;
+  }
+        img {
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+            max-width: 100%;
+            height: auto;
+           border-radius: 10px;
+        }
+  img{    
+    margin: 20px 10px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid green;
+    border-radius: 10px;
+  }
+    </style>
+</head>
+<body>
+    <h1>For you</h1>
+  <div>
+    <img id="randomImage" src="" alt="Random Image">
+  </div>
+    
+    <script src="main.js"></script>
+</body>
+</html>
